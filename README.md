@@ -20,3 +20,18 @@ This repository demonstrates the integration of Blazor and SignalR to build real
    ```bash
    git clone https://github.com/stevsharp/BlazorAndSignalR.git
    cd BlazorAndSignalR
+
+Usage
+Real-time Notifications
+The application includes a simple chat feature to demonstrate real-time notifications. Users can send messages, and all connected clients will receive the updates instantly.
+
+Blazor Components
+Explore the different Blazor components in the project to understand how state management and event handling are implemented.
+
+SignalR Integration
+Check the SignalR hub implementation and see how the server communicates with connected clients.
+
+Project Structure
+/Client: Contains the Blazor WebAssembly client application.
+/Server: Contains the ASP.NET Core server application with SignalR hubs.
+/Shared: Contains shared code and models between the client and server.
