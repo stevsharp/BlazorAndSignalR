@@ -1,0 +1,28 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.SignalR.Client
+@implements IAsyncDisposable
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<div id="form-group">
+    <label for="txtUsername">User Name</label>
+    <input type="text" @bind="username" />
+</div>
+
+<div id="form-group">
+    <label for="txtMessage">Message</label>
+    <input type="text" @bind="message" />
+</div>
+
+<input type="button" value="Send" @onclick="SendMessage" disabled="@(!isConnected)" />
+
+<ul>
+    @foreach (var message in messages)
+    {
+        <li>@message</li>
+    }
+</ul>
