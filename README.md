@@ -1,4 +1,4 @@
-# BlazorAndSignalR
+# Blazor And SignalR
 
 This repository demonstrates the integration of Blazor and SignalR to build real-time web applications. Blazor allows you to build interactive web UIs using C# instead of JavaScript, while SignalR facilitates real-time communication between the server and client.
 
